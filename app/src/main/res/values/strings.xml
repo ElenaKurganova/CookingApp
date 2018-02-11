@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CookingApp</string>
+    <string name="thumbnail">thumbnail</string>
+
 </resources>

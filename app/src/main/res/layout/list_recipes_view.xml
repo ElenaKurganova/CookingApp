@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.elena.kurganova.cookingapp.view.RecipeViewActivity">
 
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recipes_recycler_view"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorPrimaryDark"
-        android:scrollbars="vertical"/>
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Recipes"
+        android:textSize="18sp" />
 
-</android.support.constraint.ConstraintLayout>
+    <GridView
+        android:id="@+id/recipes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="1" />
+
+</LinearLayout>

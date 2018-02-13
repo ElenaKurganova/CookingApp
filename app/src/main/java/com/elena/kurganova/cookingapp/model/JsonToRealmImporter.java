@@ -21,9 +21,9 @@ public class JsonToRealmImporter {
     private Realm realm;
 
     public void importFromJson(final Resources resources) throws IOException {
-        InputStream stream = resources.openRawResource(R.raw.dinner_recipes);
-        InputStream streamTwo = resources.openRawResource(R.raw.recipes_one);
-        InputStream streamThree = resources.openRawResource(R.raw.recipes_two);
+        InputStream stream = resources.openRawResource(R.raw.recipes);
+        InputStream streamTwo = resources.openRawResource(R.raw.desserts);
+        InputStream streamThree = resources.openRawResource(R.raw.vegetarian);
         // Open a transaction to store items into the realm
         realm.beginTransaction();
         try {

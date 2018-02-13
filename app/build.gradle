@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'realm-android'
 
+
 android {
     compileSdkVersion 26
     defaultConfig {
@@ -31,4 +32,8 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'io.realm:android-adapters:2.1.1'
     annotationProcessor 'io.realm:realm-android:0.82.2'
+    compile 'com.github.thorbenprimke:realm-searchview:0.9.6'
+
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }

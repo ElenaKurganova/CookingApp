@@ -2,5 +2,6 @@
     <string name="app_name">CookingApp</string>
     <string name="thumbnail">thumbnail</string>
     <string name="recipes">Recipes</string>
+    <string name="search">Search</string>
 
 </resources>

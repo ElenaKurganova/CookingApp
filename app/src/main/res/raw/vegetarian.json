@@ -1,33 +1,59 @@
-{
-  "recipes": [
-    {
-      "title": "Roasted vegetable lasagne",
-      "image" : "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--1273584_8.jpg?itok=7f4IzhRd",
-      "url": "https://www.bbcgoodfood.com/recipes/10603/roasted-vegetable-lasagne",
-      "description": "Young, old and in-betweens will love this vegetarian Italian-style dish.",
-      "servings": 6,
-      "dietLabel": "Vegetarian",
-      "ingredientLines" :[ "3 red peppers", "2 aubergines", "8 tbsp olive oil plus a little for greasing", "½ quantity tomato sauce", "300g fresh pack lasagne sheets", "½ quantity white sauce", "125g ball mozzarella", "handful cherry tomatoes halved" ]
-    },
-    
-    {
-      "title": "Broccoli, spinach and parmesan pies",
-      "image" : "http://cdnwp.audiencemedia.com/wp-content/uploads/2014/11/440827-1-eng-GB_broccoli-spinach-and-parmesan-pies-470x540.jpg",
-      "url": "http://www.deliciousmagazine.co.uk/recipes/broccoli-spinach-and-parmesan-pies/",
-      "description": "This vegetarian broccoli, spinach and parmesan pie recipe makes a meal for 2 people that's ready in 45 minutes.",
-      "servings": 2,
-      "dietLabel": "Vegetarian",
-      "ingredientLines" :[ "150g broccoli florets", "60g baby leaf spinach", "25g butter", "1 garlic clove", "2 tbsp flour", "250ml semi-skimmed milk", "50g pack Tesco grated parmesan (or vegetarian alternative)", "500g pack Tesco Finest Cornish Butter Mash", "1 tsp polenta"]
-    },
-
-    {
-      "title": "Satay noodles",
-      "image" : "http://cdnwp.audiencemedia.com/wp-content/uploads/2017/05/830535-1-eng-GB_satay_noodles-470x540.jpg",
-      "url": "http://www.deliciousmagazine.co.uk/recipes/satay-noodles/"
-      "description": "If you love peanut butter then Katy Beskow's noodle recipe is the meal for you. Fresh, light, spicy and full of crunch – this quick and easy dish is ready to eat in just a quarter of an hour.",
-      "servings": 2,
-      "dietLabel": "Low-Sodium",
-      "ingredientLines" : [ "4 tbsp smooth peanut butter", "2 tsp dark soy sauce", "1 tsp chilli flakes", "Juice 1 lime", "1 tbsp sunflower oil", "Small handful sugar snap peas, halved", "1 small carrot, finely sliced", "2 spring onions, sliced on the diagonal", "2 x 150g packs soft egg-free ready-to-wok noodles", "2 tsp sesame seeds, small handful fresh coriander, 1 red chilli, deseeded and finely sliced, and roughly chopped peanuts to garnish"]
-    }
-  ]
-}
+[
+  {
+    "title": "Roasted vegetable lasagne",
+    "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--1273584_8.jpg?itok=7f4IzhRd",
+    "url": "https://www.bbcgoodfood.com/recipes/10603/roasted-vegetable-lasagne",
+    "description": "Young, old and in-betweens will love this vegetarian Italian-style dish.",
+    "servings": 6,
+    "dietLabel": "Vegetarian",
+    "ingredientLines": [
+      "3 red peppers",
+      "2 aubergines",
+      "8 tbsp olive oil plus a little for greasing",
+      "½ quantity tomato sauce",
+      "300g fresh pack lasagne sheets",
+      "½ quantity white sauce",
+      "125g ball mozzarella",
+      "handful cherry tomatoes halved"
+    ]
+  },
+  {
+    "title": "Broccoli, spinach and parmesan pies",
+    "image": "http://cdnwp.audiencemedia.com/wp-content/uploads/2014/11/440827-1-eng-GB_broccoli-spinach-and-parmesan-pies-470x540.jpg",
+    "url": "http://www.deliciousmagazine.co.uk/recipes/broccoli-spinach-and-parmesan-pies/",
+    "description": "This vegetarian broccoli, spinach and parmesan pie recipe makes a meal for 2 people that's ready in 45 minutes.",
+    "servings": 2,
+    "dietLabel": "Vegetarian",
+    "ingredientLines": [
+      "150g broccoli florets",
+      "60g baby leaf spinach",
+      "25g butter",
+      "1 garlic clove",
+      "2 tbsp flour",
+      "250ml semi-skimmed milk",
+      "50g pack Tesco grated parmesan (or vegetarian alternative)",
+      "500g pack Tesco Finest Cornish Butter Mash",
+      "1 tsp polenta"
+    ]
+  },
+  {
+    "title": "Satay noodles",
+    "image": "http://cdnwp.audiencemedia.com/wp-content/uploads/2017/05/830535-1-eng-GB_satay_noodles-470x540.jpg",
+    "url": "http://www.deliciousmagazine.co.uk/recipes/satay-noodles/",
+    "description": "If you love peanut butter then Katy Beskow's noodle recipe is the meal for you. Fresh, light, spicy and full of crunch – this quick and easy dish is ready to eat in just a quarter of an hour.",
+    "servings": 2,
+    "dietLabel": "Low-Sodium",
+    "ingredientLines": [
+      "4 tbsp smooth peanut butter",
+      "2 tsp dark soy sauce",
+      "1 tsp chilli flakes",
+      "Juice 1 lime",
+      "1 tbsp sunflower oil",
+      "Small handful sugar snap peas, halved",
+      "1 small carrot, finely sliced",
+      "2 spring onions, sliced on the diagonal",
+      "2 x 150g packs soft egg-free ready-to-wok noodles",
+      "2 tsp sesame seeds, small handful fresh coriander, 1 red chilli, deseeded and finely sliced, and roughly chopped peanuts to garnish"
+    ]
+  }
+]

@@ -1,54 +1,80 @@
-{
-  "recipes": [
-    {
-      "title": "Korean Rice Cakes (Dok Boki)",
-      "image" : "https://www.edamam.com/web-img/fb3/fb3bc87fd98258e3151e4e1604e5db1a.jpg",
-      "url": "http://www.seriouseats.com/recipes/2010/11/seriously-asian-korean-rice-cakes-dok-boki.html",
-      "description": "Rice cake, called tteok in Korean, is a much-loved traditional dish with many many variations. No festival day, anniversary, or celebrations is complete without them. They are very chewy, and may be an acquired taste, but once you get hooked you'll crave them all the time.",
-      "servings": 4,
-      "dietLabel": "Low-Fat",
-      "ingredientLines" : [ "6 to 8 fresh long rice cake sticks, or 20 smaller rice cake sticks", "For the sauce:", "3 tablespoons korean chili pepper paste", "3 to 4 tablespoons light soy sauce, depending on saltiness", "1 teaspoon sugar", "1 teaspoon rice vinegar", "Roasted sesame seeds to garnish" ]
-
-    },
-
-    {
-      "title": "Dump Cake",
-      "image" : "https://www.edamam.com/web-img/d14/d14cd8ea9dfafe5836f96a6b0f2e6da1.jpg",
-      "url": "http://www.epicurious.com/recipes/member/views/DUMP-CAKE-50059991",
-      "description": "Don’t let the name scare you. It’s a really simple dessert — usually made with a base of cake mix + fruit filling — where, true to its name, you can dump the ingredients into a pan, give it a stir, and bake.",
-      "servings": 12,
-      "dietLabel": "Vegetarian",
-      "ingredientLines" : [ "1 can (21 oz.) cherry pie filling", "1 can (15 oz.) crushed pineapple", "1 box (about 18 oz.) yellow or white cake mix", "1 stick margarine", "½ sticks butter", "Whipped cream" ]
-    },
-
-    {
-      "title": "Sugar Cookies",
-      "image" : "https://www.edamam.com/web-img/6d3/6d330326a8537689db909a91767595b6.jpg",
-      "url": "http://www.seriouseats.com/recipes/2008/12/sugar-cookies-recipe-gina-depalma-holidays.html",
-      "description": "To be served warm, when they're nice and chewy, with jam or with strawberries and cream. When cooled and left unadorned, they become crisp and buttery sugar cookies.",
-      "servings": 42,
-      "dietLabel": "Low-Sodium",
-      "ingredientLines" : [ "2 1/2 cups self-rising white lily or cake flour", "2 sticks (1 cup) unsalted butter, softened", "1 1/2 cups sugar", "1 large egg, lightly beaten", "1 teaspoon vanilla" ]
-    },
-
-    {
-      "title": "Creamed Candy Corn",
-      "image" : "https://www.edamam.com/web-img/a5a/a5a5a0716d6e7ff4f020c86e546c1013.jpg",
-      "url": "http://www.seriouseats.com/recipes/2010/11/cakespy-creamed-candy-corn-recipe.html",
-      "description": "The resulting candy corn slurry is certainly one of those dishes that straddles the line between awful and awesome: that is to say, you might just like it, but you probably wouldn't confess that to your foodie friends.",
-      "servings": 6,
-      "dietLabel": "Vegetarian",
-      "ingredientLines" :[ "1 cup cream or half and half", "2 tablespoons butter", "2 tablespoons instant vanilla pudding mix", "1 bag (11 ounces) candy corn" ]
-    },
-
-    {
-      "title": "Buttermilk Creams with Strawberries",
-      "image" : "https://www.edamam.com/web-img/af6/af6e66d2d8b8de01a99d7587429223ae.jpg",
-      "url": "http://www.marthastewart.com/314096/buttermilk-creams-with-strawberries",
-      "description": "Whipped cream gives these no-bake eggless custards a delicate texture. Don't worry if the mixture forms clumps at first -- it will come together with gentle folding.",
-      "servings": 8,
-      "dietLabel": "Low-Sodium",
-      "ingredientLines" : [ "1 1/4 teaspoons unflavored gelatin (from a 1/4-ounce envelope)", "3/4 cup sugar", "1 cup low-fat buttermilk", "1 1/2 cups heavy cream", "1 pound strawberries, hulled and quartered", "1 teaspoon fresh lemon juice" ]
-    }
-  ]
-}
+[
+  {
+    "title": "Korean Rice Cakes (Dok Boki)",
+    "image": "https://www.edamam.com/web-img/fb3/fb3bc87fd98258e3151e4e1604e5db1a.jpg",
+    "url": "http://www.seriouseats.com/recipes/2010/11/seriously-asian-korean-rice-cakes-dok-boki.html",
+    "description": "Rice cake, called tteok in Korean, is a much-loved traditional dish with many many variations. No festival day, anniversary, or celebrations is complete without them. They are very chewy, and may be an acquired taste, but once you get hooked you'll crave them all the time.",
+    "servings": 4,
+    "dietLabel": "Low-Fat",
+    "ingredientLines": [
+      "6 to 8 fresh long rice cake sticks, or 20 smaller rice cake sticks",
+      "For the sauce:",
+      "3 tablespoons korean chili pepper paste",
+      "3 to 4 tablespoons light soy sauce, depending on saltiness",
+      "1 teaspoon sugar",
+      "1 teaspoon rice vinegar",
+      "Roasted sesame seeds to garnish"
+    ]
+  },
+  {
+    "title": "Dump Cake",
+    "image": "https://www.edamam.com/web-img/d14/d14cd8ea9dfafe5836f96a6b0f2e6da1.jpg",
+    "url": "http://www.epicurious.com/recipes/member/views/DUMP-CAKE-50059991",
+    "description": "Don’t let the name scare you. It’s a really simple dessert — usually made with a base of cake mix + fruit filling — where, true to its name, you can dump the ingredients into a pan, give it a stir, and bake.",
+    "servings": 12,
+    "dietLabel": "Vegetarian",
+    "ingredientLines": [
+      "1 can (21 oz.) cherry pie filling",
+      "1 can (15 oz.) crushed pineapple",
+      "1 box (about 18 oz.) yellow or white cake mix",
+      "1 stick margarine",
+      "½ sticks butter",
+      "Whipped cream"
+    ]
+  },
+  {
+    "title": "Sugar Cookies",
+    "image": "https://www.edamam.com/web-img/6d3/6d330326a8537689db909a91767595b6.jpg",
+    "url": "http://www.seriouseats.com/recipes/2008/12/sugar-cookies-recipe-gina-depalma-holidays.html",
+    "description": "To be served warm, when they're nice and chewy, with jam or with strawberries and cream. When cooled and left unadorned, they become crisp and buttery sugar cookies.",
+    "servings": 42,
+    "dietLabel": "Low-Sodium",
+    "ingredientLines": [
+      "2 1/2 cups self-rising white lily or cake flour",
+      "2 sticks (1 cup) unsalted butter, softened",
+      "1 1/2 cups sugar",
+      "1 large egg, lightly beaten",
+      "1 teaspoon vanilla"
+    ]
+  },
+  {
+    "title": "Creamed Candy Corn",
+    "image": "https://www.edamam.com/web-img/a5a/a5a5a0716d6e7ff4f020c86e546c1013.jpg",
+    "url": "http://www.seriouseats.com/recipes/2010/11/cakespy-creamed-candy-corn-recipe.html",
+    "description": "The resulting candy corn slurry is certainly one of those dishes that straddles the line between awful and awesome: that is to say, you might just like it, but you probably wouldn't confess that to your foodie friends.",
+    "servings": 6,
+    "dietLabel": "Vegetarian",
+    "ingredientLines": [
+      "1 cup cream or half and half",
+      "2 tablespoons butter",
+      "2 tablespoons instant vanilla pudding mix",
+      "1 bag (11 ounces) candy corn"
+    ]
+  },
+  {
+    "title": "Buttermilk Creams with Strawberries",
+    "image": "https://www.edamam.com/web-img/af6/af6e66d2d8b8de01a99d7587429223ae.jpg",
+    "url": "http://www.marthastewart.com/314096/buttermilk-creams-with-strawberries",
+    "description": "Whipped cream gives these no-bake eggless custards a delicate texture. Don't worry if the mixture forms clumps at first -- it will come together with gentle folding.",
+    "servings": 8,
+    "dietLabel": "Low-Sodium",
+    "ingredientLines": [
+      "1 1/4 teaspoons unflavored gelatin (from a 1/4-ounce envelope)",
+      "3/4 cup sugar",
+      "1 cup low-fat buttermilk",
+      "1 1/2 cups heavy cream",
+      "1 pound strawberries, hulled and quartered",
+      "1 teaspoon fresh lemon juice"
+    ]
+  }
+]

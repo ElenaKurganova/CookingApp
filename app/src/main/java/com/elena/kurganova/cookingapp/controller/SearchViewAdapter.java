@@ -24,7 +24,6 @@ import static android.support.v4.content.ContextCompat.startActivity;
 public class SearchViewAdapter
         extends RealmSearchAdapter<Recipe, SearchViewAdapter.ViewHolder> {
 
-    private String url = "https://medium.com/@Zhuinden/how-to-use-realm-for-android-like-a-champ-and-how-to-tell-if-youre-doing-it-wrong-ac4f66b7f149";
     private Context mContext;
 
     public SearchViewAdapter(
@@ -47,15 +46,19 @@ public class SearchViewAdapter
             super(recipeView);
             this.recipeView = recipeView;
         }
+
+        public RecipeSearchView getRecipeView() {
+            return recipeView;
+        }
     }
 
     @Override
     public ViewHolder onCreateRealmViewHolder(ViewGroup viewGroup, int viewType) {
-        ViewHolder vh = new ViewHolder(new RecipeSearchView(viewGroup.getContext()));
+        final ViewHolder vh = new ViewHolder(new RecipeSearchView(viewGroup.getContext()));
         vh.itemView.setOnClickListener(new View.OnClickListener() {
                                            @Override
                                            public void onClick(View v) {
-                                               openUrl();
+                                               openUrl(vh.getRecipeView().getUrl());
                                            }
                                        }
         );
@@ -76,8 +79,7 @@ public class SearchViewAdapter
                 (TextView) v.findViewById(R.id.footer_text_view));
     }
 
-
-    public void openUrl() {
+    public void openUrl(String url) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(url));
         mContext.startActivity(intent);

@@ -36,6 +36,8 @@ public class RecipeSearchView extends RelativeLayout {
     @BindView(R.id.image)
     ImageView imageView;
 
+    String url;
+
     public RecipeSearchView(Context context) {
         super(context);
         init(context);
@@ -52,6 +54,11 @@ public class RecipeSearchView extends RelativeLayout {
         description.setText(recipe.getDescription());
         label.setText(recipe.getDietLabel());
         Picasso.with(getContext()).load(recipe.getImage()).into(imageView);
+        url = recipe.getUrl();
+    }
+
+    public String getUrl() {
+        return url;
     }
 }
 

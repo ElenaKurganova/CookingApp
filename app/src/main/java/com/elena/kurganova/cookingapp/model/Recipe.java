@@ -1,20 +1,14 @@
 package com.elena.kurganova.cookingapp.model;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.UUID;
-
 import io.realm.RealmObject;
-import io.realm.annotations.PrimaryKey;
 
 public class Recipe extends RealmObject {
 
     public String title;
-
+    private String image;
     public String url;
     public String description;
-    public String servings;
+    public long servings;
     public String dietLabel;
 
 
@@ -29,7 +23,13 @@ public class Recipe extends RealmObject {
         this.title = title;
     }
 
+    public String getImage() {
+        return image;
+    }
 
+    public void setImage(String image) {
+        this.image = image;
+    }
 
     public String getUrl() {
         return url;
@@ -47,11 +47,11 @@ public class Recipe extends RealmObject {
         this.description = description;
     }
 
-    public String getServings() {
+    public long getServings() {
         return servings;
     }
 
-    public void setServings(String servings) {
+    public void setServings(long servings) {
         this.servings = servings;
     }
 

@@ -1,27 +1,38 @@
 package com.elena.kurganova.cookingapp.controller;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.support.annotation.NonNull;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.elena.kurganova.cookingapp.R;
+import com.elena.kurganova.cookingapp.model.JsonToRealmImporter;
 import com.elena.kurganova.cookingapp.model.Recipe;
 import com.elena.kurganova.cookingapp.view.RecipeSearchView;
 
+import butterknife.OnClick;
 import co.moonmonkeylabs.realmsearchview.RealmSearchAdapter;
 import co.moonmonkeylabs.realmsearchview.RealmSearchViewHolder;
 import io.realm.Realm;
 
+import static android.support.v4.content.ContextCompat.startActivity;
+
 public class SearchViewAdapter
         extends RealmSearchAdapter<Recipe, SearchViewAdapter.ViewHolder> {
+
+    private String url = "https://medium.com/@Zhuinden/how-to-use-realm-for-android-like-a-champ-and-how-to-tell-if-youre-doing-it-wrong-ac4f66b7f149";
+    private Context mContext;
 
     public SearchViewAdapter(
             Context context,
             Realm realm,
             String filterColumnName) {
         super(context, realm, filterColumnName);
+        this.mContext = context;
     }
 
     public class ViewHolder extends RealmSearchViewHolder {
@@ -41,6 +52,13 @@ public class SearchViewAdapter
     @Override
     public ViewHolder onCreateRealmViewHolder(ViewGroup viewGroup, int viewType) {
         ViewHolder vh = new ViewHolder(new RecipeSearchView(viewGroup.getContext()));
+        vh.itemView.setOnClickListener(new View.OnClickListener() {
+                                           @Override
+                                           public void onClick(View v) {
+                                               openUrl();
+                                           }
+                                       }
+        );
         return vh;
     }
 
@@ -58,17 +76,14 @@ public class SearchViewAdapter
                 (TextView) v.findViewById(R.id.footer_text_view));
     }
 
-    @Override
-    public void onBindFooterViewHolder(ViewHolder holder, int position) {
-        super.onBindFooterViewHolder(holder, position);
-        holder.itemView.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                    }
-                }
-        );
+
+    public void openUrl() {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(url));
+        mContext.startActivity(intent);
     }
 }
+
+
 
 

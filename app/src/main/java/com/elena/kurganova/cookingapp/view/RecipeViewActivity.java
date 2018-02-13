@@ -36,11 +36,7 @@ public class RecipeViewActivity extends Activity {
         realmSearchView = (RealmSearchView) findViewById(R.id.search_view);
         searchViewAdapter = new SearchViewAdapter(this, realm, "title");
         realmSearchView.setAdapter(searchViewAdapter);
-    }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
         // Load from file "recipes.json" first time
         List<Recipe> recipes = null;
         try {
@@ -48,6 +44,11 @@ public class RecipeViewActivity extends Activity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
     }
 
     @Override

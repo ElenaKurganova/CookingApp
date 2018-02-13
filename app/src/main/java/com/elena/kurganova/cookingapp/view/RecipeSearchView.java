@@ -1,14 +1,18 @@
 package com.elena.kurganova.cookingapp.view;
 
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.elena.kurganova.cookingapp.R;
 import com.elena.kurganova.cookingapp.model.Recipe;
+import com.squareup.picasso.Picasso;
 
 import android.content.Context;
 import android.widget.RelativeLayout;
@@ -19,6 +23,7 @@ import butterknife.ButterKnife;
 
 public class RecipeSearchView extends RelativeLayout {
 
+
     @BindView(R.id.title)
     TextView title;
 
@@ -28,6 +33,8 @@ public class RecipeSearchView extends RelativeLayout {
     @BindView(R.id.label)
     TextView label;
 
+    @BindView(R.id.image)
+    ImageView imageView;
 
     public RecipeSearchView(Context context) {
         super(context);
@@ -39,10 +46,13 @@ public class RecipeSearchView extends RelativeLayout {
         ButterKnife.bind(this);
     }
 
+    @SuppressLint("ResourceType")
     public void bind(Recipe recipe) {
         title.setText(recipe.getTitle());
         description.setText(recipe.getDescription());
         label.setText(recipe.getDietLabel());
+        Picasso.with(getContext()).load(recipe.getImage()).into(imageView);
     }
 }
+
 

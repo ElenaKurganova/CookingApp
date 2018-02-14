@@ -1,30 +1,36 @@
 package com.elena.kurganova.cookingapp.model;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.res.Resources;
 import android.util.Log;
 
 import com.elena.kurganova.cookingapp.R;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.List;
 
 import io.realm.Realm;
 
 public class JsonToRealmImporter {
 
     private static final String TAG = JsonToRealmImporter.class.getSimpleName();
-    private Realm realm;
+    private final Realm realm;
 
+    public JsonToRealmImporter(Realm realm) {
+        this.realm = realm;
+    }
+
+    /**
+     * Load JSON to Realm from Stream
+     *
+     * @param resources
+     * @throws IOException
+     */
     public void importFromJson(final Resources resources) throws IOException {
         InputStream stream = resources.openRawResource(R.raw.recipes);
         InputStream streamTwo = resources.openRawResource(R.raw.desserts);
         InputStream streamThree = resources.openRawResource(R.raw.vegetarian);
-        // Open a transaction to store items into the realm
+
+        // Open the transaction to store recipe items into the realm
         realm.beginTransaction();
         try {
             realm.createAllFromJson(Recipe.class, stream);
@@ -48,7 +54,4 @@ public class JsonToRealmImporter {
         Log.d(TAG, "createAllFromJson task completed");
     }
 
-    public JsonToRealmImporter(Realm realm) {
-        this.realm = realm;
-    }
 }

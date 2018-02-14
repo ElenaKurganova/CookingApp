@@ -4,17 +4,18 @@ import io.realm.RealmObject;
 
 public class Recipe extends RealmObject {
 
-    public String title;
+    private String title;
     private String image;
-    public String url;
-    public String description;
-    public long servings;
-    public String dietLabel;
+    private String url;
+    private String description;
+    private long servings;
+    private String dietLabel;
 
 
     public Recipe() {
     }
 
+    //Getters and Setters
     public String getTitle() {
         return title;
     }

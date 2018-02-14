@@ -1,3 +1,9 @@
+/**
+ * Recipes Android app
+ * @author Elena Kurganova
+ * @version 1.0.0
+ */
+
 package com.elena.kurganova.cookingapp.view;
 
 import android.app.Activity;
@@ -27,20 +33,22 @@ public class RecipeViewActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.search_view);
 
+        //Realm gets configured
         RealmConfiguration realmConfiguration = new RealmConfiguration.Builder().name("recipes.realm").deleteRealmIfMigrationNeeded().build();
         Realm.deleteRealm(realmConfiguration);
         realm = Realm.getInstance(realmConfiguration);
 
         jsonToRealmImporter = new JsonToRealmImporter(realm);
 
-        realmSearchView = (RealmSearchView) findViewById(R.id.search_view);
+        // SearchView associated with view
+        realmSearchView = findViewById(R.id.search_view);
+
+        //SearchView adapter that makes search and displays the list of recipes
         searchViewAdapter = new SearchViewAdapter(this, realm, "title");
         realmSearchView.setAdapter(searchViewAdapter);
 
-        // Load from file "recipes.json" first time
-        List<Recipe> recipes = null;
         try {
-            recipes = loadRecipes();
+            loadRecipes();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -57,8 +65,15 @@ public class RecipeViewActivity extends Activity {
         realm.close();
     }
 
-    public List<Recipe> loadRecipes() throws IOException {
+    /**
+     * Load recipes
+     * @return
+     * @throws IOException
+     */
+    private List<Recipe> loadRecipes() throws IOException {
         jsonToRealmImporter.importFromJson(getResources());
         return realm.where(Recipe.class).findAll();
     }
 }
+
+
